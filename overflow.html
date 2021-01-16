@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>overflow</title>
+		<style type="text/css">
+			.box1{
+				width: 200px;
+				height: 200px;
+				background-color: #bfa;
+				/* 溢出
+					visible：默认值，显示溢出部分
+					hidden：会修剪溢出部分
+					scroll：溢出部分可以使用滚动条查看，为父元素添加滚动条
+					auto：根据需要添加水平、垂直滚动条
+				 */
+				overflow: auto;
+			}
+			
+			.box2{
+				width: 100px;
+				height: 500px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="box2"></div>
+		</div>
+	</body>
+</html>

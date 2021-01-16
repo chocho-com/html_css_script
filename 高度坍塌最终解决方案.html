@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>高度坍塌最终解决方案</title>
+		<style type="text/css">
+			.box1{
+				width: 100px;
+				height: 100px;
+				background-color: #bfa;
+				/* float: left; */
+			}
+			
+			.box11{
+				width: 50px;
+				height: 50px;
+				background-color: pink;
+				float: left;
+			}
+			
+			/*解决方案二 */
+			.clear{
+				clear: both;
+			}
+			
+			/* 解决方案三 */
+			.clearfix:after, .clearfix::before{
+				content: '';
+				display: table;
+				clear: both;
+			}
+			
+			.box2{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+				/* 清除浮动影响 
+				clear:
+					none:默认值，不清楚浮动
+					left：去除左侧元素浮动影响
+					right:去除右侧元素浮动影响
+					both:清除两侧影响
+				清除浮动后，元素回到浮动前的位置
+				
+				解决方案一
+				*/
+			   /* clear: left; */
+			}
+			
+			.box3{
+				width: 300px;
+				height: 300px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1 clearfix">
+			<div class="box11"></div>
+			<div class="clear"></div>
+		</div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</body>
+</html>

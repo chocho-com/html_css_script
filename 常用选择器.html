@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>常用选择器</title>
+		<style type="text/css">
+			/* 
+				范围：页面所有元素
+				样式：
+					字体：红色
+			 */
+			/*元素选择器*/
+			p{
+				 color: red;
+			 }
+			 
+			 /*
+				范围：指定p元素
+				样式：
+					字体大小：20
+			*/
+		   /*  id选择器*/
+		   #p1{
+			   font-size: 20px;
+		   }
+		   
+		   /* 类选择器 */
+		   .p{
+			   color: greenyellow;
+		   }
+		   
+		   /* 选中所有元素 */
+		   *{
+			   opacity: 0.8;
+		   }
+		   
+		   /* 复合选择器 */
+		   span.p2{
+			   font-size: 30px;
+		   }
+		   
+		   
+		</style>
+	</head>
+	<body>
+		<h1>chocho</h1>
+		<p>秋秋的前端之旅</p>
+		<p id="p1">秋秋的前端之旅</p>
+		<p class="p">秋秋的前端之旅</p>
+		<p class="p">秋秋的前端之旅</p>
+		<p class="p">秋秋的前端之旅</p>
+		<p class="p">秋秋的前端之旅</p>
+		<p>秋秋的前端之旅</p>
+		<p>秋秋的前端之旅</p>
+		<p><span class="p2">秋秋</span>的前端之旅</p>
+		<p>秋秋的前端之旅</p>
+	</body>
+</html>

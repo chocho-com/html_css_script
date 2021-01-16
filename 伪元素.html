@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>伪元素</title>
+		<style type="text/css">
+			/* 范围：第一个字母
+			 样式：
+				大小30
+			*/
+		   p::first-letter{
+			   font-size: 30px;
+		   }
+		   
+		   /* 范围：第一行，自适应
+			样式：
+				黄色
+			*/
+		   p::first-line{
+			   color: #ADFF2F;
+		   }
+		   
+		   /* 范围：元素最前面、元素最后面
+			样式：
+				需要结合content使用*/
+			p:before{
+				content: '最前面<';
+			}
+			p:after{
+				content: '>最后面';
+			}
+		</style>
+	</head>
+	<body>
+		<p>我是一个段落
+		我是填充字段我是填充字段我是填充字段我是填充字段我是填充字段我是填充字段
+		我是填充字段我是填充字段我是填充字段我是填充字段我是填充字段</p>
+	</body>
+</html>

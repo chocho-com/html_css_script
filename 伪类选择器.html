@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>伪类选择器</title>
+		<style type="text/css">
+			/* 伪类：用于表示元素的一种特殊状态*/
+			
+			/* 
+			 范围：没访问过的链接
+			 样式：
+				绿色
+			*/
+		   a:link{
+			   background-color: #ADFF2F;
+		   }
+		   
+		   /* 
+			范围：访问过的链接
+			样式：
+				红色
+				
+			浏览器通过历史记录来判断是否访问过，由于涉及隐私，只能设置字体颜色!!!
+			*/
+		   a:visited{
+			   color: #FF0000;
+		   }
+		   
+		   /* 范围：鼠标悬浮其上
+			样式：
+				透明度：0.8
+			*/
+		   a:hover{
+			   opacity: 0.8;
+		   }
+		   
+		   /* 范围：超链接被点击的状态
+			样式：
+				蓝色
+			*/
+		   a:active{
+			   color: blue;
+		   }
+		   
+		   /* 范围：文本框被选中，获取焦点
+			样式：
+				背景黄色
+			*/
+		   input:focus{
+			   background-color: #ADFF2F;
+		   }
+		   
+		   /* 范围：选中的文字
+			样式：
+				aqua
+			*/
+		   p::selection{
+			   color: aqua;
+		   }
+		   /*火狐
+			p::-moz-selection{
+				color: aqua;
+		   } */
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">没有被访问过的链接</a><br/>
+		<a href="http://www.baidu123.com">已经被访问过的链接</a><br/>
+		
+		<input type="text"/>
+		
+		<p>我是一段文字</p>
+	</body>
+</html>

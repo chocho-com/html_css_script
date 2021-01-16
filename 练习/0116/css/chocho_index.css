@@ -1,0 +1,86 @@
+/* 清除默认样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* 设置body */
+body{
+	/* 背景 */
+	/* background-image: url(../img/background_img.png);
+	background-repeat: repeat-x; */
+	background: url(../img/background_img.png) repeat-x;
+}
+
+/* 固定宽度和居中 */
+.cho-width{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* 设置header页眉 */
+.header{
+	/* 开发使用 */
+	/* background-color: #bfa; */
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+/* 设置logo */
+.logo{
+	margin-left: 25px;
+	float: left;
+}
+
+/* 设置logo的图片 */
+.logo img{
+	/* 设置logo的宽高 */
+	width: 420px;
+	height: 100px;
+	display: inline-block;
+}
+
+/* 设置导航条nav */
+.nav{
+	float: right;
+	list-style: none;
+	/* 上外边距 */
+	margin-top: 22px;
+}
+
+/* 设置Li */
+.nav li{
+	float: left;
+	/* 设置左右内边距 */
+	padding: 0px 10px;
+	/* 设置左边框 */
+	border-left: 1px #d6d6d6 dashed;
+}
+
+/* 设置导航条中的超链接 */
+.nav a{
+	font: bold 14px 'Gill Sans';
+	/* 设置字体颜色 */
+	color: #666;
+	/* 去除下划线 */
+	text-decoration: none;
+}
+
+/* 设置超链接移入效果 */
+.nav a:hover{
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+
+/* 设置导航条中的文字 */
+.nav p{
+	color: #b7b7b7;
+	font: 11px tahoma;
+}
+
+/* 设置banner的图片 */
+.banner img{
+	width: 1200px;
+	height: auto;
+	/* 设置图片阴影 */
+}

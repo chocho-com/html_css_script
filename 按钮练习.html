@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>按钮练习</title>
+		<style type="text/css">
+			/* 设置超链接 */
+			.btn{
+				/* 设置背景图片 */
+				background-image: url(static/img/button.png);
+				display: inline-block;
+				width: 194px;
+				height: 112px;
+				background-repeat: no-repeat;
+			}
+			
+			/* 当第一次切换图片时，会出现一次闪烁，导致用户体验不佳。
+			背景图片是以外部资源加载，在使用时采取加载。 */
+			/* 解决闪烁问题:（图片整合技术）
+			 将三种状态的图片放在一张图片(雪碧图)中，每次需要切换时，只需要移动图片位置。
+			 使用background-position来移动。
+			 */
+			
+		</style>
+	</head>
+	<body>
+		<a class="btn" href="#"></a>
+	</body>
+</html>

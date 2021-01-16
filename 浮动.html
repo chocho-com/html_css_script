@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动</title>
+		<style type="text/css">
+			.box1{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				/* 在文档流中垂直排列，如果希望水平排列，则脱离文档流 */
+				/* float：
+					none：默认值，不浮动，在文档流中
+					left：脱离文档流，左侧浮动
+					right：脱离文档流，右侧
+				*/
+			   /* 左浮动，则文档流剩余元素依旧按照文档流规则显示 
+			   尽量向文档左上、右上漂浮*/
+			   float: left;
+			}
+			
+			.box2{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+				float: left;
+			}
+			/* 块元素浮动后，高度和宽度会被内容撑开 */
+			
+			.box3{
+				width: 600px;
+				height: 300px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<!-- <div class="box2"></div> -->
+		<div class="box3">
+			我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字
+			我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字
+			我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字
+			我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字
+			我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字
+			我是一段文字我是一段文字我是一段文字我是一段文字我是一段文字
+		</div>
+	</body>
+</html>

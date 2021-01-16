@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>元素层级</title>
+	<style type="text/css">
+				.box1{
+					width: 200px;
+					height: 200px;
+					background-color: red;
+					position: relative;
+				}
+				
+				.box2{
+					width: 200px;
+					height: 200px;
+					background-color: yellow;
+					position: absolute;
+					left: 100px;
+					top: 100px;
+					z-index: 1;
+					opacity: 0.8;
+				}
+				
+				.box3{
+					width: 200px;
+					height: 200px;
+					background-color: yellowgreen;
+					/* 层级越高，越优先显示 
+					只有开启定位的元素可以使用该属性
+					父元素不能覆盖子元素*/
+					z-index: 2;
+					position: relative;
+					/* 透明度 */
+					opacity: 0.7;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</body>
+	</html>
+	

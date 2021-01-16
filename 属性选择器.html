@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>属性选择器</title>
+		<style type="text/css">
+			/* 范围：具有相同属性的元素
+			 样式：
+				黄色背景
+			*/
+		   p[title]{
+			   background-color: #ADFF2F;
+		   }
+		   
+		   /* 范围：具有指定属性的元素
+			样式：
+				红色
+			*/
+		   p[title='hh1']{
+			   color: #FF0000;
+		   }
+		   
+		   /* 范围：以指定开头开头的属性 
+		   样式：
+				蓝色
+			*/
+		   p[title^='ab']{
+			   color: blue;
+		   }
+		   
+		   /* 范围：以指定结尾结尾的属性
+		   样式：
+		   		白色
+		   	*/
+		   p[title$='2']{
+				color: white;
+		   }
+		   
+		   /* 范围：包含指定字符串的属性
+			样式：
+				背景颜色橙色
+			*/
+		   p[title*='k']{
+			   background-color: orange;
+		   }
+		</style>
+	</head>
+	<body>
+		<p title="hh1">hha</p>
+		<p title="hh2">hha</p>
+		<p title="abc">hha</p>
+		<p title="kgffff">hha</p>
+		<p title="dsdk">hha</p>
+		<p>hha</p>
+	</body>
+</html>

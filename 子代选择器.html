@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>子代选择器</title>
+		<style type="text/css">
+			/* 同一个祖先的后代元素 */
+			div span{
+				color: #ADFF2F;
+			}
+			
+			/* 统一祖先的后代的后代元素 */
+			div p span{
+				color: #FF0000;
+			}
+			
+			/* 父元素 > 子元素 */
+			div > span{
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 祖先元素：div相对于span来说是祖先元素
+			父元素：直接包含子代元素
+			子元素：直接呗父元素包含
+		 -->
+		<div>
+			<p>
+				<span>我是span</span>
+			</p>
+			<span>我是div中的span</span>
+		</div>
+		<span>我是body中的span</span>
+	</body>
+</html>

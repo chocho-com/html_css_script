@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>高度塌陷</title>
+		<style type="text/css">
+			.box1{
+				border: 10px red solid;
+			}
+			
+			/* 文档流中，父元高度被子元素撑开 */
+			.box2{
+				width: 100px;
+				height: 100px;
+				background-color: #0000FF;
+				
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="box2"></div>
+		</div>
+	</body>
+</html>

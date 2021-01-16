@@ -1,0 +1,54 @@
+/* 去除默认样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* 设置头部div */
+.header{
+	width: 1000px;
+	height: 120px;
+	background-color: red;
+	margin: 0 auto;
+}
+
+/* 设置主体内容 */
+.content{
+	width: 1000px;
+	height: 400px;
+	background-color: orange;
+	margin: 10px auto;
+}
+
+/* 左侧内容 */
+.left{
+	width: 200px;
+	height: 100%;
+	background-color: skyblue;
+	float: left;
+}
+
+/* 中间内容 */
+.center{
+	width: 580px;
+	height: 100%;
+	background-color: yellow;
+	float: left;
+	margin: 0 10px;
+}
+
+/* 右侧内容 */
+.right{
+	width: 200px;
+	height: 100%;
+	background-color: pink;
+	float: left;
+}
+
+/* 设置底部 */
+.footer{
+	width: 1000px;
+	height: 120px;
+	background-color: silver;
+	margin: 0 auto;
+}
